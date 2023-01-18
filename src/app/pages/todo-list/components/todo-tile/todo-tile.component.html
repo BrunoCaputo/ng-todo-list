@@ -1,0 +1,13 @@
+<div class="tile">
+  <mat-checkbox
+    [checked]="done"
+    color="primary"
+    (change)="toggleDone($event.checked)"
+  >
+    {{ text }}
+  </mat-checkbox>
+
+  <button mat-icon-button (click)="removeTodo()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

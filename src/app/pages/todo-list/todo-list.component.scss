@@ -1,0 +1,31 @@
+.container {
+  padding: 1rem;
+
+  h1 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .add-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+
+    .mat-mdc-form-field {
+      width: 70%;
+    }
+    .mdc-button {
+      width: 25%;
+    }
+  }
+  .todo-list {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+  }
+}

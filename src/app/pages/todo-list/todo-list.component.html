@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>My TO DO List</h1>
+
+  <div class="add-todo">
+    <mat-form-field class="example-full-width">
+      <mat-label>My TODO</mat-label>
+      <input matInput type="text" #todoInput />
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="addTodo(todoInput.value)"
+    >
+      Add Todo
+    </button>
+  </div>
+
+  <div class="todo-list">
+    <h3 *ngIf="todoList.length === 0">No TODOS</h3>
+    <todo-tile
+      *ngFor="let todo of todoList; let id = index"
+      [text]="todo.text"
+      [done]="todo.done"
+      [id]="id"
+    ></todo-tile>
+  </div>
+</div>

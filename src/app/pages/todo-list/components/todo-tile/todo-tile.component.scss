@@ -1,0 +1,10 @@
+.tile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 25px;
+
+  .mat-mdc-checkbox {
+    max-width: 60%;
+  }
+}
